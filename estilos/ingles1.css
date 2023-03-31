@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;0,600;1,300;1,500;1,600;1,800&display=swap');
+
+:root{
+    --fonte-titulos:'Pridi', serif;
+    --fonte-txt: 'Roboto', sans-serif;
+    --fonte-botoes: 'Kanit', sans-serif;
+    --cor0:#61C1D9;
+    --cor1:#067BB0;
+    --cor2:#076B8F;
+    --txt-cor0:#d6bb31;
+    --txt-cor1:#0F244F;
+    --txt-cor2:#0B76DB;
+    --top-cor:#020815;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(230, 227, 227);
+}
+
+h1{
+    font-family: var(--fonte-botoes);
+}
+p{
+    font-family: var(--fonte-txt);
+}
+
+header{
+    margin: 0;
+    background-color: var(--top-cor);
+    text-align: center;
+    display: flex;
+}
+
+div#esquerda{
+    width: 24%;
+}
+div#direita{
+    width: 70%;
+    text-align: start;
+    margin-left: 20px;
+}
+
+header > div#esquerda > h1{
+    margin: 0;
+    font-size: 2.5em;
+    font-family: var(--fonte-titulos);
+    color:var(--txt-cor2);
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.541);
+}
+
+nav{
+    background-color: var(--top-cor);
+    padding: 10px;
+    margin-top: 6px;
+    height: 1.39em;
+}
+nav > a{
+    color:white;
+    font-family: var(--fonte-botoes);
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 6px 13px 6px 13px;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+nav > a:hover{
+    font-size: 1.37em;
+    box-shadow: 9px 5px 7px rgba(0, 0, 0, 0.404);
+    border-radius: 5px;
+    background-color: #118C76;
+}
+a#atual{
+    color: var(--txt-cor2);
+}
+a#atual:hover{
+    color: white;
+}
+
+main{
+    margin: auto;
+    width: 90vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(230, 227, 227);
+}
+
+aside{
+    border-radius: 10px;
+    width: 96%;
+    height: 30em;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 4px;
+    display: flex;
+    background-color: #EDC71E;
+}
+aside > #img-top{
+    width: 54%;
+}
+aside > #img-top > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+aside > #txt-top{
+    width: 46%;
+    border-left: 1px solid black;
+}
+#txt-top > p{
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 24px;
+    text-indent: 10px;
+    text-align: center;
+    margin-top: 170px;
+}
+
+article{
+    width: 96%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 20em;
+    padding: 8px;
+    display: flex;
+    background-image: url(../imagens/fundo-de-cards-vazio2.png);
+}
+#txtNF{
+    background-color: #959ca3;
+    border-radius: 15px 0px 0px 15px;
+    border-right: 1px solid black;
+}
+#txtNM{
+    background-color: #b36d38;
+    border-radius: 0px 15px 15px 0px;
+    border-left: 1px solid black;
+}
+#txtNH{
+    background-color: #CCBCA1;
+    border-radius: 15px 0px 0px 15px;
+    border-right: 1px solid black;
+}
+
+#txtNF > h1{
+    color: #731702;
+}
+#txtNM > h1{
+    color: #DFB503;
+}
+#txtNH > h1{
+    color: var(--txt-cor2);
+}
+
+.foto1{
+    width: 40%;
+}
+
+#fotonf, #fotonm, #fotonh{
+    width: 100%;
+    height: 100%;
+}
+#fotonf > img,#fotonh > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+#fotonm > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+.txt-box{
+    width: 60%;
+}
+.txt-box > h1{
+    margin: 0;
+    font-size: 2.3em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
+    padding: 10px;
+    margin-left: 20px;
+}
+.txt-box > p{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: 24px;
+    text-indent: 10px;
+    text-align: center;
+}
+/*-----------------------BOTÕES------------------------*/
+#botoesNF, #botoesNM, #botoesNH{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.b1, .b2, .b3{
+    background-color: var(--txt-cor2);
+    width: 140px;
+    height: 50px;
+    margin: 0px 30px 0px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.b1:hover, .b2:hover, .b3:hover{
+    width: 150px;
+    font-size: 1.1em;
+}
+
+.b1 > p, .b2 > p, .b3 > p{
+    margin: 0;
+    margin-top: 14px;
+    font-family: var(--fonte-botoes);
+    font-weight: 800;
+    color: white;
+    transition: 0.1s;
+}
+
+footer{
+    height: 10em;
+    background-color: var(--top-cor);
+}
+
+
+@media only screen and (max-width:500px){
+    header{
+        flex-direction: column;
+    }
+    div#esquerda{
+        width: 100%;
+    }
+    div#direita{
+        width: 100%;
+    }
+    nav{
+        height: auto;
+        width: 92vw;
+        padding: 10px 0px 10px 0px;
+    }
+    nav > a{
+        padding: 6px 0px 6px 0px;
+        margin-left: 5px;
+    }
+
+    aside{
+        flex-direction: column;
+    }
+    aside > #img-top{
+        width: 100%;
+    }
+    aside > #img-top > img{
+        border-radius: 10px 10px 0px 0px;
+        border-bottom: 1px solid black;
+    }
+    aside > #txt-top{
+        width: 100%;
+        border-left: 0px solid black;
+    }
+    #txt-top > p{
+        font-size: 1.2em;
+        text-align: justify;
+        margin-top: 10px;
+    }
+
+    article{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .txt-box{
+        width: 100%;
+    }
+    .txt-box > h1{
+        margin-left: 0;
+        text-align: center;
+    }
+    .txt-box > p{
+        text-align: justify;
+    }
+    #txtNF, #txtNH{
+        border-radius: 10px 10px 0px 0px;
+        border-right: 0px solid black;
+    }
+    #txtNM{
+        margin-top: -5px;
+        border-left: 0px solid black;
+        border-top: 1px solid black;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .foto1{
+        border-top: 1px solid black;
+        width: 100%;
+    }
+    #imgNM{
+        border-top: 0px solid black;
+    }
+    #fotonf > img,#fotonh > img{
+        border-radius: 0px 0px 10px 10px;
+    }
+    #fotonm > img{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .b1, .b2, .b3{
+        margin: 0px 0px 0px 0px;
+        border-radius: 0px;
+    }
+    .b2{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    #botoesNF, #botoesNM, #botoesNH{
+        margin-top: 10px;
+    }
+    #a1{
+        border-radius: 0px 0px 0px 10px;
+    }
+    #a2{
+        border-radius: 0px 0px 10px 0px;
+    }
+}
