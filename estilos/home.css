@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 :root{
     --cor0:#FF5C00;
     --cor1:#010305;
     --cor2:#521F03;
+    --font0:'Roboto', sans-serif;;
 }
 
 body{
@@ -10,11 +13,40 @@ body{
     margin: auto;
     color: white;
     background-color: var(--cor1);
+    font-family: var(--font0);
 }
 header{
     margin-top: 30px;
 }
-
+#celular{
+    border: 1px solid rgb(41, 36, 36);
+    width: 90%;
+    background-color: rgba(28, 29, 29, 0.651);
+    display: flex;
+    position: fixed;
+    display: none;
+}
+#social{
+    width: 63%;
+    display: flex;
+}
+#social>a{
+    padding: 0px 10px 0px 10px;
+}
+div#b1{
+    width: 37%;
+    text-align: center;
+}
+div#b1 > h1{
+    margin: 0px;
+    font-size: 2em;
+}
+span#a1{
+    font-size: 1em;
+}
+span#a2{
+    font-size: 0.90em;
+}
 nav > a{
     color:black;
     background-color: var(--cor0);
@@ -41,11 +73,13 @@ nav > a{
 .enem1{
     font-size: 6em;
     text-shadow: 16px 18px 0px var(--cor2);
+    font-weight: bold;
 }
 .enem{
     font-size: 6em;
     padding-left: 40px;
     text-shadow: 16px 18px 0px var(--cor2);
+    font-weight: bold;
 }
 
 .centro1{
@@ -63,7 +97,7 @@ nav > a{
     margin: 0;
     margin-top: 10px;
     font-size: 1.3em;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 40px;
     margin-bottom: 16px;
 }
@@ -110,6 +144,7 @@ main{
     margin: 0;
     margin-top: 16px;
     font-size: 1.2em;
+    font-weight: 400;
     line-height: 24px;
     text-align: center;
 }
@@ -136,7 +171,7 @@ main{
     padding-left: 8px;
 }
 #enem > h2{
-    font-weight: 200;
+    font-weight: 400;
 }
 #destaque1{
     border-radius: 50%;
@@ -182,6 +217,7 @@ main{
 /*--------------------A3----------------------------*/
 #ingles{
     margin-top: 40px;
+    border-bottom: 2px solid var(--cor0);
 }
 #ingles > h1{
     margin: 0;
@@ -189,11 +225,26 @@ main{
     color: var(--cor0);
 }
 @media only screen and (max-width:900px){
+    #celular{
+        display: flex;
+    }
+    div#b1{
+        display: block;
+    }
+    nav{
+        display: none;
+        margin-top: 45px;
+        margin-left: 230px;
+        position: fixed;
+    }
     nav > a{
-        font-size: 1.3em;
-        padding: 7px 10px 7px 10px;
-        margin-left: 30px;
+        display: block;
+        font-size: 1em;
+        width: 100px;
+        text-align: center;
+        margin-left: 0px;
         margin-right: 0px;
+        margin-bottom: 4px;
     }
     #bloco1{
         flex-direction: column-reverse;
@@ -203,15 +254,16 @@ main{
     }
     .esquerda1 > h1{
         font-size: 4.5em;
+        padding-top: 40px;
     }
     .enem1{
         font-size: 4.5em;
-        text-shadow: 10px 10px 0px var(--cor2);
+        text-shadow: 13px 14px 0px var(--cor2);
     }
     .enem{
         font-size: 4.5em;
         padding-left: 20px;
-        text-shadow: 14px 14px 0px var(--cor2);
+        text-shadow: 13px 14px 0px var(--cor2);
     }
     
     .centro1{
@@ -219,7 +271,9 @@ main{
         margin-bottom: 20px;
     }
     .redes-sociais{
+        padding-top: 30px;
         text-align: start;
+        display: none;
     }
     .redes-sociais > a{
         padding: 0px 20px;
@@ -289,10 +343,13 @@ main{
         width: 90vw;
     }
     nav > a{
+        display: block;
         font-size: 1em;
-        padding: 7px 10px 7px 10px;
-        margin-left: 12px;
+        width: 100px;
+        text-align: center;
+        margin-left: 0px;
         margin-right: 0px;
+        margin-bottom: 4px;
     }
     #bloco1{
         flex-direction: column-reverse;
@@ -305,12 +362,12 @@ main{
     }
     .enem1{
         font-size: 4em;
-        text-shadow: 10px 10px 0px var(--cor2);
+        text-shadow: 11px 13px 0px var(--cor2);
     }
     .enem{
         font-size: 4em;
         padding-left: 20px;
-        text-shadow: 10px 10px 0px var(--cor2);
+        text-shadow: 11px 13px 0px var(--cor2);
     }
     
     .centro1{
