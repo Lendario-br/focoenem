@@ -120,44 +120,6 @@ article{
     background-color: #f8620c;
     color: white;
 }
-
-footer{
-    margin: 0;
-    padding: 3px;
-    border: 1px solid white;
-    width: 99.4%;
-    height: 30vh;
-    display: flex;
-}
-#ladoA{
-    border: 1px solid red;
-    width: 30%;
-    padding: 10px;
-}
-#ladoB{
-    border: 1px solid red;
-    width: 30%;
-    padding: 10px;
-}
-#ladoA > h2, #ladoB > h2{
-    margin: 0%;
-    font-size: 2em;
-}
-#ladoA > p, #ladoB > p{
-    font-size: 1.3em;
-}
-#ladoC{
-    border: 1px solid red;
-    width: 40%;
-    text-align: center;
-}
-#ladoC > img{
-    padding-top: 60px;
-}
-.rodape{
-    color: #FF8A00;
-}
-
 @media only screen and (max-width:900px){
     #cursos-ingles > h1, #apps-ingles > h1, #videos-ingles > h1{
         margin-left: 20px;
@@ -196,9 +158,9 @@ footer{
         margin-left: 60px;
     }
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:430px){
     #cursos-ingles > h1,#apps-ingles > h1, #videos-ingles > h1{
-        font-size: 3.4em;
+        font-size: 3em;
     }
     .box{
         width: 84vw;
