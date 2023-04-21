@@ -1,82 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;0,600;1,300;1,500;1,600;1,800&display=swap');
 
 :root{
     --fonte-titulos:'Pridi', serif;
     --fonte-txt: 'Roboto', sans-serif;
+    --fonte-botoes: 'Kanit', sans-serif;
 }
 /* footer */
 footer {
-    background-color: black;
-    margin-top: 50px;
-    width: auto;
+    width: 100%;
     height: 100%;
+    border: 1px solid white;
+    background-color: black;
     color: aliceblue;
     font-family: var(--fonte-txt);
     text-align: center;
+    margin: 0;
 }
-aside{
+footer > .footer{
     display: flex;
     margin-bottom: 20px;
 
 }
-aside > .sobre > .contatos {
+footer > .footer > .sobre > .contatos {
     width: 30%;
     font-size: 0.9em;
     margin-left: 50px;
     margin-right: 50px;
 }
-aside > .sobre > .contatos > h2 {
+footer > .footer > .sobre > .contatos > h2 {
     font-family: var(--fonte-titulos);
     font-size: 2em;
     margin: 5px;
 
 }
-aside  > .sobre > .duvidas {
+footer > .footer  > .sobre > .duvidas {
     width: 30%;
     font-size: 0.9em;
     margin-left: 50px;
     margin-right: 50px;
 }
-aside > .sobre > .duvidas > h2 {
+footer > .footer > .sobre > .duvidas > h2 {
     font-family: var(--fonte-titulos);
     font-size: 2em;
     margin: 5px;
 }
 
-aside > .icons {
+footer > .footer > .icons {
     width: 35%;
     height: 90px;
-    margin-left: auto;
-    margin-right: 20px;
+    margin-top: 80px;
+    margin-right: 0;
+    margin-left: 25vw;
+    scale: 1.2;
 }
 .sobre {
     display: flex;
 }
-
-@media only screen and (max-width:900px){
-    aside {
-        flex-direction: column;
-    }
-    footer > aside > .sobre {
+@media only screen and (max-width:1124px){
+    footer > .footer > .sobre {
         display: flex;
     }
-    footer > aside > .sobre > .contatos  {
+    footer > .footer > .sobre > .contatos  {
+        width: 50%;
+        font-size: 1em;
+        margin: 0;
+    }
+    footer > .footer > .sobre > .duvidas  {
+        margin: 0;
+        width: 50%;
+        margin-left: 15vw;
+        font-size: 1em;
+    }
+    footer > .footer > .icons {
+        margin: 0;
+        margin-left: 10vw;
+        margin-right: auto;
+        margin-top: 10vh;
+        scale: 1.4;
+     
+
+    }
+
+}
+@media only screen and (max-width:850px){
+    footer > .footer {
+        flex-direction: column;
+    }
+    footer > .footer > .sobre {
+        display: flex;
+    }
+    footer > .footer > .sobre > .contatos  {
         width: 50%;
         font-size: 0.7em;
         flex-direction: column;
         margin: 0;
     }
-    footer > aside > .sobre > .duvidas  {
+    footer > .footer > .sobre > .duvidas  {
         margin: 0;
         width: 50%;
         font-size: 0.7em;
         flex-direction: column;
     }
-    footer > aside > .icons {
-        width: 99%;
+    footer > .footer > .icons {
+        margin: 0;
+        margin-left: 25vw;
+        margin-right: auto;
+        scale: 1.5;
+     
+
     }
 
 }
 
+@media only screen and (max-width:550px){
+    footer > .footer {
+        flex-direction: column;
+    }
+    footer > .footer > .sobre {
+        display: flex;
+    }
+    footer > .footer > .sobre > .contatos  {
+        width: 50%;
+        font-size: 0.7em;
+        flex-direction: column;
+        margin: 0;
+    }
+    footer > .footer > .sobre > .duvidas  {
+        margin: 0;
+        width: 50%;
+        font-size: 0.7em;
+        flex-direction: column;
+    }
+    footer > .footer > .icons {
+        margin: 0;
+        margin-left: 12vw;
+        margin-right: auto;
+        scale: 0.9;
+     
+
+    }
+}
+    @media only screen and (max-width:350px){
+        footer > .footer {
+            flex-direction: column;
+        }
+        footer > .footer > .sobre {
+            display: flex;
+        }
+        footer > .footer > .sobre > .contatos  {
+            width: 50%;
+            font-size: 0.7em;
+            flex-direction: column;
+            margin: 0;
+        }
+        footer > .footer > .sobre > .duvidas  {
+            margin: 0;
+            width: 50%;
+            font-size: 0.7em;
+            flex-direction: column;
+        }
+        footer > .footer > .icons {
+            margin: 0;
+            margin-left: 5vw;
+            margin-right: auto;
+            scale: 0.7;
+         
+    
+        }
+
+      }

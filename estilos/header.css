@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;0,600;1,300;1,500;1,600;1,800&display=swap');
+
+:root{
+    --fonte-titulos:'Pridi', serif;
+    --fonte-txt: 'Roboto', sans-serif;
+    --fonte-botoes: 'Kanit', sans-serif;
+}
+nav {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto ;
+    height: 200px;
+
+    
+}
+a {
+    margin-top: 20px;
+    margin: 80px;
+    color: aliceblue;
+    padding: 5px 25px 5px 25px;
+    border-radius: 20px;
+    background-color: rgb(255, 102, 0, 0.7);
+    text-decoration: none;
+}
+@media only screen and (max-width:850px) {
+    nav {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -10vh ;
+    }
+    a {
+        margin: 25px;
+    }
+}
+@media only screen and (max-width:550px) {
+    nav {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a {
+        margin: 5px;
+    }
+}
+@media only screen and (max-width:350px) {
+    nav {
+        flex-direction: column;
+        width: max-content;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -10vh ;
+    }
+    a {
+        font-size: 1.2em;
+        margin: 0;
+        flex-direction: column;
+        border-radius: 0;
+    }
+}

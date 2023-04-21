@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;0,600;1,300;1,500;1,600;1,800&display=swap');
+
+:root{
+    --fonte-titulos:'Pridi', serif;
+    --fonte-txt: 'Roboto', sans-serif;
+    --fonte-botoes: 'Kanit', sans-serif;
+}
+hr {
+    border: 4px solid rgb(238, 135, 0); ;
+    margin: 0;
+}
+
+.top {
+    background-image: url(../imagens/fundo.png);
+    background-size: cover;
+    width: 100%;
+    height: 115vh;
+}
+.logo {
+    scale: 1.6;
+    margin-left: 10vw;
+    width: fit-content;
+}
+.tittle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    display: flex;
+}
+.tittle2 {
+    color: white;
+    display: flex;
+    font-size: 25px;
+    margin-left: 9vw;
+    
+}
+.Text {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1px 15px;
+    font-size: 30px;
+    border-radius: 20px;
+    background: rgb(82,35,0);
+    background: linear-gradient(90deg, rgba(82,35,0,0.59) 1%, rgba(89,43,9,0.59) 8%, rgba(255,109,0,0.59) 28%, rgba(255,110,0,0.59) 61%, rgba(85,36,0,0.59) 76%);
+}
+
+.scrolldown {
+    width: fit-content;
+    height: fit-content;
+    scale: 1.6;
+    margin-left: 18vw;
+    margin-top: 35vh;
+    opacity: 0.5;
+}
+/* bottom */
+
+article {
+    background-image: url(../imagens/fundo2.png);
+    background-size: cover;
+    height: 114vh;
+    color: white;
+}
+article > hr {
+    margin-top: auto;
+}
+.logoenem {
+    scale: 0.8;
+    margin-right: 80vw;
+}
+.logoingles {
+    margin-left: 5vw;
+    margin-bottom: 15vh;
+    margin-top: 10vh;
+}
+h4 {
+    margin-top: -20px;
+    margin-left: 10vw;
+}
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    padding: 5px 20px;
+    background: rgb(82,35,0);
+background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255,92,0,0.78) 54%, rgba(82,35,0,0.8029586834733894) 100%, rgba(255,92,0,1) 100%);
+    border-radius: 20px;
+
+}
+.aside {
+    margin-left: 10vw;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 625px;
+    text-align: center;
+    padding: 0px 0px 15px 0px;
+}
+@media only screen and (max-width:850px) {
+    .logo {
+        scale: 1.5;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+    .tittle {
+        width: fit-content;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        font-family: var(--fonte-titulos);
+        color: white;
+        margin-top: 5vh;
+        text-align: center;
+        display: flex;
+
+    }
+    .scrolldown {
+        width: fit-content;
+        height: fit-content;
+        scale: 1.6;
+        margin-right: auto;
+        margin-top: 14vh;
+        opacity: 0.6;
+    }
+    .tittle2 {
+        flex-direction: column;
+        color: rgba(0, 0, 0, 0);
+        font-size: 1em;
+        letter-spacing: 2px;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        display: flex;
+        text-align: center;
+
+
+    }
+    .Text {
+        font-size: 1.5em;
+        color: white;
+        font-family: var(--fonte-txt);
+        text-align: center;
+    }
+    .aside {
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        border: 2px solid white;
+        border-radius: 30px;
+        width: 300px;
+        font-size: 30px;
+        text-align: center;
+        padding: 0px 0px 15px 0px;
+        font-family: var(--fonte-txt);
+    }
+    .top {
+        background-size: 50em;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    article {
+        background-size: cover;
+        background-position: center;
+    }
+    .logoenem {
+        scale: 0.8;
+        margin-right: 80vw;
+    }
+    .logoingles {
+        scale: 0.9;
+        margin: 0;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+    
+}
+@media only screen and (max-width:550px) {
+    .logo {
+        scale: 0.9;
+        margin: 0;
+        margin-left: 10vw;
+        margin-right: auto;
+        width: fit-content;
+    }
+    .tittle {
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        font-family: var(--fonte-titulos);
+        color: white;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        display: flex;
+
+    }
+    .scrolldown {
+        width: fit-content;
+        height: fit-content;
+        scale: 1.6;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14vh;
+        opacity: 0.8;
+    }
+    .tittle2 {
+        flex-direction: column;
+        color: rgba(0, 0, 0, 0);
+        font-size: 1em;
+        letter-spacing: 2px;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        display: flex;
+        text-align: center;
+
+
+    }
+    .Text {
+        font-size: 1.5em;
+        color: white;
+        font-family: var(--fonte-txt);
+        text-align: center;
+    }
+    .aside {
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        border: 2px solid white;
+        border-radius: 30px;
+        width: 300px;
+        font-size: 30px;
+        text-align: center;
+        padding: 0px 0px 15px 0px;
+        font-family: var(--fonte-txt);
+    }
+    .top {
+        background-size: 50em;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    article {
+        background-size: cover;
+        background-position: center;
+    }
+    .logoenem {
+        scale: 0.5;
+        margin-right: 80vw;
+    }
+    .logoingles {
+        scale: 0.65;
+        margin-right: 16vw;
+        margin: 0;
+        margin-bottom: 5vh;
+    }
+}
+@media only screen and (max-width:350px) {
+        .logo {
+            scale: 0.7;
+            margin: 0;
+            margin-left: -10vw;
+            width: fit-content;
+        }
+        .tittle {
+            font-size: 0.8em;
+            letter-spacing: 2px;
+            font-family: var(--fonte-titulos);
+            color: white;
+            margin-top: 5vh;
+            margin-left: 10vw;
+            display: flex;
+    
+        }
+        .scrolldown {
+            width: fit-content;
+            height: fit-content;
+            scale: 1.6;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 14vh;
+            opacity: 0.8;
+        }
+        .tittle2 {
+            flex-direction: column;
+            color: rgba(0, 0, 0, 0);
+            font-size: 1em;
+            letter-spacing: 2px;
+            margin-top: 5vh;
+            margin-left: 10vw;
+            display: flex;
+            text-align: center;
+    
+    
+        }
+        .Text {
+            font-size: 1.5em;
+            color: white;
+            font-family: var(--fonte-txt);
+            text-align: center;
+        }
+        .aside {
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+            border: 2px solid white;
+            border-radius: 30px;
+            width: 300px;
+            font-size: 30px;
+            text-align: center;
+            padding: 0px 0px 15px 0px;
+            font-family: var(--fonte-txt);
+        }
+        .top {
+            background-size: 60em;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+        article {
+            background-size: cover;
+            background-position: center;
+        }
+        .logoenem {
+            scale: 0.5;
+            margin-right: 80vw;
+        }
+        .logoingles {
+            scale: 0.65;
+            margin-right: 16vw;
+            margin: 0;
+            margin-bottom: 5vh;
+        }
+    }

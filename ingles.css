@@ -1,0 +1,218 @@
+:root{
+    --cor:#FF5C00;
+}
+
+body{
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+#apps-ingles, #cursos-ingles{
+    border-bottom: 2px solid var(--cor);
+    background-image: url(imagens/6.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid red;
+}
+#cursos-ingles > h1,#apps-ingles > h1, #videos-ingles > h1{
+    font-size: 6em;
+    text-shadow: 0px 20px 40px  rgba(255, 255, 255, 0.5);
+    border: 1px solid red;
+    margin-left: 100px;
+    margin-right: 400px;
+}
+#videos-ingles > h1{
+    margin-left: 160px;
+    border: 1px solid red;
+}
+#cursos-ingles > h1 > img,#apps-ingles > h1 >img, #videos-ingles > h1 > img{
+    border: 1px solid red;
+    height: 1.3em;
+    width: 0.6em;
+}
+.box{
+    border: 8px solid white;
+    border-radius: 40px;
+    padding: 8px;
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    width: 70vw;
+}
+#esquerda1{
+    border: 1px solid red;
+    width: 35%;
+}
+#direita1 , #direita2, #direita3, #direita4{
+    border: 1px solid red;
+    width: 65%;
+    padding: 10px;
+}
+#direita1 > p, #direita2 > p, #direita3 > p, #direita4 > p{
+    font-size: 1.4em;
+    line-height: 30px;
+}
+.link{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 4px 10px 4px 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: #bb4907;
+    transition: 0.5s;
+    border: 1px solid red;
+}
+.link:hover{
+    padding: 5px 16px 5px 16px;
+    font-size: 2.1em;
+    background-color: #FF5C00;
+}
+span{
+    color: #FF5C00;
+}
+
+#esquerda3, #esquerda4{
+    width: 35%;
+    border: 1px solid red;
+}
+
+
+#videos-ingles{
+    background-image: url(imagens/7.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid red;
+}
+article{
+    border: 1px solid red;
+    border: 6px solid white;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 80px 299px 80px 160px;
+}
+.box-videos{
+    padding-bottom: 20px;
+    border: 1px solid red;
+}
+.logo{
+    border-bottom: 1px solid #f8620c;
+    border: 1px solid red;
+}
+.txt{
+    border: 1px solid red;
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+.videos{  
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 5px 16px 5px 16px;
+    border: 1px solid red;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.videos:hover{
+    background-color: #f8620c;
+    color: white;
+}
+
+footer{
+    margin: 0;
+    padding: 3px;
+    border: 1px solid white;
+    width: 99.4%;
+    height: 30vh;
+    display: flex;
+}
+#ladoA{
+    border: 1px solid red;
+    width: 30%;
+    padding: 10px;
+}
+#ladoB{
+    border: 1px solid red;
+    width: 30%;
+    padding: 10px;
+}
+#ladoA > h2, #ladoB > h2{
+    margin: 0%;
+    font-size: 2em;
+}
+#ladoA > p, #ladoB > p{
+    font-size: 1.3em;
+}
+#ladoC{
+    border: 1px solid red;
+    width: 40%;
+    text-align: center;
+}
+#ladoC > img{
+    padding-top: 60px;
+}
+.rodape{
+    color: #FF8A00;
+}
+
+@media only screen and (max-width:900px){
+    #cursos-ingles > h1, #apps-ingles > h1, #videos-ingles > h1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .box{
+        margin-left: 30px;
+        width: 88vw;
+    }
+    article{
+        margin: 80px 30px 80px 30px;
+    }
+    .logo > picture > img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:600px){
+    #cursos-ingles > h1,#apps-ingles > h1, #videos-ingles > h1{
+        font-size: 4.5em;
+    }
+    .box{
+        flex-direction: column;
+        width: 74vw;
+        margin: auto;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+    }
+    #esquerda1,#esquerda2,#esquerda3,#esquerda4{
+        width: 100%;
+        text-align: center;
+    }
+    #direita1,#direita2,#direita3,#direita4{
+        width: 94%;
+    }
+    .link{
+        margin-left: 60px;
+    }
+}
+@media only screen and (max-width:400px){
+    #cursos-ingles > h1,#apps-ingles > h1, #videos-ingles > h1{
+        font-size: 3.4em;
+    }
+    .box{
+        width: 84vw;
+    }
+    #esquerda2>img{
+        width: 100%;
+    }
+    .link{
+        margin-left: 30px;
+    }
+    article{
+        margin: 80px 14px 80px 14px;
+        padding: 10px;
+        
+    }
+
+}
