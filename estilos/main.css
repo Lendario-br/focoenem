@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;0,600;1,300;1,500;1,600;1,800&display=swap');
-
 :root{
     --fonte-titulos:'Pridi', serif;
     --fonte-txt: 'Roboto', sans-serif;
@@ -11,17 +7,18 @@ hr {
     border: 4px solid rgb(238, 135, 0); ;
     margin: 0;
 }
-body {
-    margin: 0;
-    background-size: cover;
-    background-color: rgb(0, 0, 0);
-    background-repeat: no-repeat;
-}
+
 .top {
     background-image: url(../imagens/fundo.png);
     background-size: cover;
     width: 100%;
     height: 115vh;
+}
+body {
+    margin: 0;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
 }
 .logo {
     scale: 1.6;
@@ -91,7 +88,7 @@ h3 {
     width: max-content;
     padding: 5px 20px;
     background: rgb(82,35,0);
-background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255,92,0,0.78) 54%, rgba(82,35,0,0.8029586834733894) 100%, rgba(255,92,0,1) 100%);
+    background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255,92,0,0.78) 54%, rgba(82,35,0,0.8029586834733894) 100%, rgba(255,92,0,1) 100%);
     border-radius: 20px;
 
 }
@@ -103,7 +100,7 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
     text-align: center;
     padding: 0px 0px 15px 0px;
 }
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:900px) {
     .logo {
         scale: 1.5;
         margin: 0;
@@ -115,7 +112,6 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
         width: fit-content;
         font-size: 1.5em;
         letter-spacing: 2px;
-        font-family: var(--fonte-titulos);
         color: white;
         margin-top: 5vh;
         text-align: center;
@@ -127,8 +123,8 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
         height: fit-content;
         scale: 1.6;
         margin-right: auto;
-        margin-top: 14vh;
-        opacity: 0.6;
+        margin-top: 4vh;
+        opacity: 0;
     }
     .tittle2 {
         flex-direction: column;
@@ -145,7 +141,6 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
     .Text {
         font-size: 1.5em;
         color: white;
-        font-family: var(--fonte-txt);
         text-align: center;
     }
     .aside {
@@ -155,10 +150,9 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
         border: 2px solid white;
         border-radius: 30px;
         width: 300px;
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
         padding: 0px 0px 15px 0px;
-        font-family: var(--fonte-txt);
     }
     .top {
         background-size: 50em;
@@ -170,8 +164,11 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
         background-position: center;
     }
     .logoenem {
-        scale: 0.8;
+        scale: 0.6;
         margin-right: 80vw;
+    }
+    .enem {
+        height: 270px;
     }
     .logoingles {
         scale: 0.9;
@@ -181,9 +178,9 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
     }
     
 }
-@media only screen and (max-width:550px) {
+@media only screen and (max-width:600px) {
     .logo {
-        scale: 0.9;
+        scale: 1.5;
         margin: 0;
         margin-left: 10vw;
         margin-right: auto;
@@ -192,7 +189,6 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
     .tittle {
         font-size: 0.8em;
         letter-spacing: 2px;
-        font-family: var(--fonte-titulos);
         color: white;
         margin-top: 5vh;
         margin-left: 10vw;
@@ -206,7 +202,7 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
         margin-left: auto;
         margin-right: auto;
         margin-top: 14vh;
-        opacity: 0.8;
+        opacity: 0;
     }
     .tittle2 {
         flex-direction: column;
@@ -223,7 +219,6 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
     .Text {
         font-size: 1.5em;
         color: white;
-        font-family: var(--fonte-txt);
         text-align: center;
     }
     .aside {
@@ -233,10 +228,91 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
         border: 2px solid white;
         border-radius: 30px;
         width: 300px;
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
         padding: 0px 0px 15px 0px;
-        font-family: var(--fonte-txt);
+    }
+    .top {
+        background-size: 50em;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    article {
+        background-size: cover;
+        background-position: center;
+    }
+    .logoenem {
+        scale: 0.5;
+        height: 0;
+        margin-right: 80vw;
+    }
+    .enem {
+        height: 160px;
+    }
+    .ingles {
+        height: 160px;
+    }
+    .logoingles {
+        scale: 0.65;
+        margin-right: 1vw;
+        margin: 0;
+        margin-bottom: 5vh;
+    }
+}
+@media only screen and (max-width:430px) {
+    .logo {
+        scale: 0.9;
+        margin: 0;
+        margin-top: -130px;
+        margin-left: 10vw;
+        margin-right: auto;
+        width: fit-content;
+    }
+    .tittle {
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        color: white;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        display: flex;
+
+    }
+    .scrolldown {
+        width: fit-content;
+        height: fit-content;
+        scale: 1.6;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14vh;
+        opacity: 0;
+    }
+    .tittle2 {
+        flex-direction: column;
+        color: rgba(0, 0, 0, 0);
+        font-size: 1em;
+        letter-spacing: 2px;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        display: flex;
+        text-align: center;
+
+
+    }
+    .Text {
+        font-size: 1.5em;
+        color: white;
+        text-align: center;
+    }
+    .aside {
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        border: 2px solid white;
+        border-radius: 30px;
+        width: 300px;
+        font-size: 15px;
+        text-align: center;
+        padding: 0px 0px 15px 0px;
     }
     .top {
         background-size: 50em;
@@ -258,17 +334,17 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
         margin-bottom: 5vh;
     }
 }
-@media only screen and (max-width:350px) {
+@media only screen and (max-width:320px) {
         .logo {
             scale: 0.7;
             margin: 0;
             margin-left: -10vw;
+            margin-top: -120px;
             width: fit-content;
         }
         .tittle {
             font-size: 0.8em;
             letter-spacing: 2px;
-            font-family: var(--fonte-titulos);
             color: white;
             margin-top: 5vh;
             margin-left: 10vw;
@@ -282,7 +358,7 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
             margin-left: auto;
             margin-right: auto;
             margin-top: 14vh;
-            opacity: 0.8;
+            opacity: 0;
         }
         .tittle2 {
             flex-direction: column;
@@ -299,7 +375,6 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
         .Text {
             font-size: 1.5em;
             color: white;
-            font-family: var(--fonte-txt);
             text-align: center;
         }
         .aside {
@@ -309,10 +384,9 @@ background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255
             border: 2px solid white;
             border-radius: 30px;
             width: 300px;
-            font-size: 30px;
+            font-size: 15px;
             text-align: center;
             padding: 0px 0px 15px 0px;
-            font-family: var(--fonte-txt);
         }
         .top {
             background-size: 60em;
