@@ -55,18 +55,17 @@ footer{
     color: white;
     margin: 0;
     padding: 3px;
-    border: 1px solid white;
+    border-top: 1px solid #FF8A00;
     width: 99.4%;
+    height: 35vh;
     display: flex;
 }
 #ladoA{
-    border: 1px solid red;
-    width: 30%;
+    width: 35%;
     padding: 10px;
 }
 #ladoB{
-    border: 1px solid red;
-    width: 30%;
+    width: 35%;
     padding: 10px;
 }
 #ladoA > h2, #ladoB > h2{
@@ -77,12 +76,11 @@ footer{
     font-size: 1.3em;
 }
 #ladoC{
-    border: 1px solid red;
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 #ladoC > img{
-    padding-top: 60px;
+    padding-top: 40px;
 }
 .rodape{
     color: #FF8A00;

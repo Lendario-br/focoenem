@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
 :root{
-    --fonte-titulos:'Pridi', serif;
-    --fonte-txt: 'Roboto', sans-serif;
-    --fonte-botoes: 'Kanit', sans-serif;
+    --cor:#FF5C00;
+    --fonte-txt:'Roboto', sans-serif;
+    --fonte-especial: 'Pridi', serif;
 }
 hr {
     border: 4px solid rgb(238, 135, 0); ;
@@ -9,19 +12,17 @@ hr {
 }
 
 .top {
-    background-image: url(../imagens/fundo.png);
+    background-image: url(../logos-img/fundo.png);
     background-size: cover;
     width: 100%;
     height: 115vh;
 }
 body {
     margin: 0;
+    font-family: var(--fonte-txt);
     background-size: cover;
     background-color: rgb(0, 0, 0);
     background-repeat: no-repeat;
-}
-main{
-    border: 1px solid white;
 }
 .logo {
     scale: 1.6;
@@ -64,13 +65,11 @@ main{
 /* bottom */
 
 article {
-    background-image: url(../imagens/fundo2.png);
+    background-image: url(../logos-img/fundo2.png);
     background-size: cover;
-    padding-bottom: 140px;
+    padding: 100px;
     color: white;
-    border: 1px solid blue;
 }
-
 article > hr {
     margin-top: auto;
 }
@@ -339,7 +338,7 @@ h3 {
         margin-bottom: 5vh;
     }
 }
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:320px) {
         .logo {
             scale: 0.7;
             margin: 0;
@@ -397,6 +396,10 @@ h3 {
             background-size: 60em;
             background-repeat: no-repeat;
             background-position: bottom;
+        }
+        article {
+            background-size: cover;
+            background-position: center;
         }
         .logoenem {
             scale: 0.5;

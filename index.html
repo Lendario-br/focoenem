@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FocoEnem</title>
-    <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="shortcut icon" href="logos-img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/home.css">
     <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="top">
@@ -15,44 +16,40 @@
         <nav>
             <br>
             <a href="index.html">Home</a>
-            <a href="">Enem</a>
+            <a href="enem.html">Enem</a>
             <a href="ingles.html">Inglês</a>     
         </nav>
     </header>
     <main>
-        
-            <div class="logo">
-                <img src="imagens/logo(titulo).png" alt="">
-            </div>
             <div class="tittle">Prepare-se para o Enem através de cursos</div>
                 <br>
                 <div class="tittle2"><div class="Text">únicos</div>,<div class="Text">eficientes</div> & <div class="Text">completos</div></div>
-                <div class="scrolldown"><img src="imagens/scrolldown.png" alt=""></div>
+                <div class="scrolldown"><img src="logos-img/scrolldown.png" alt=""></div>
             </div>
         </div>
         <hr>
         <article>
             <div class="enem">
-                <div class="logoenem"><img src="imagens/logoenem.png" alt="" sizes="1" srcset=""></div>
+                <div class="logoenem"><img src="logos-img/logoenem.png" alt="" sizes="1" srcset=""></div>
             </div>
             <h4>.cursos que te preparam e entregam conteudos para o enem:</h4>
             <aside class="aside">
-                <h3>gratuitos</h3>
+                <h3 onclick="enem()">gratuitos</h3>
                 kultivi, blogdoenem & cursoenemgratuito
-                <h3>pagos</h3>
+                <h3 onclick="enem()">pagos</h3>
                 descomplica & aprova total
             </aside>  
         </article>
         <hr>
         <article>
             <div class="ingles">
-            <div class="logoingles"><img src="imagens/logoingles.png" alt="" sizes="1" srcset="" title="oioioi"></div>
+            <div class="logoingles"><img src="logos-img/logoingles.png" alt="" sizes="1" srcset="" title="oioioi"></div>
             </div>
             <h4>.cursos e apps que te preparam, entregando conteúdos da lingua inglesa:</h4>.
             <aside class="aside">
-                <h3>gratuitos</h3>
+                <h3 onclick="ingles()">gratuitos</h3>
                 wizard, open english & aba
-                <h3>pagos</h3>
+                <h3 onclick="ingles()">pagos</h3>
                 duolingo, babbel, busu & memrise
             </aside>
 
@@ -67,12 +64,24 @@
         </div>
         <div id="ladoB">
             <h2><span class="rodape">Contatos</span></h2>
-            <p>+55(32) 9986-09167</p>
-            <p>focoenemduvidas@gmail.com</p>
+            <p><i class="fa fa-whatsapp" style="font-size:26px"></i> +55(32) 9986-09167</p>
+            <p onclick="emai()"><i class="fa fa-envelope" style="font-size:26px"></i> focoenemduvidas@gmail.com</p>
         </div>
         <div id="ladoC">
             <img src="logos-img/logo-projeto.png" alt="logo do Projeto FocoEnem">
         </div>
     </footer>
+
+    <script>
+        function emai(){
+            window.location.href ='mailto:focoenemduvidas@gmail.com'
+        }
+        function enem(){
+            window.location.href ='enem.html'
+        }
+        function ingles(){
+            window.location.href ='ingles.html'
+        }
+    </script>
 </body>
 </html>

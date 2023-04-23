@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
 :root{
     --cor:#FF5C00;
+    --fonte-txt:'Roboto', sans-serif;
+    --fonte-especial: 'Pridi', serif;
 }
 
 body{
@@ -7,27 +12,23 @@ body{
     background-color: black;
     margin: 0;
 }
-
 #apps-ingles, #cursos-ingles{
     border-bottom: 2px solid var(--cor);
-    background-image: url(imagens/6.png);
+    background-image: url(../logos-img/6.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border: 1px solid red;
 }
 #cursos-ingles > h1,#apps-ingles > h1, #videos-ingles > h1{
     font-size: 6em;
+    font-family: var(--fonte-especial);
     text-shadow: 0px 20px 40px  rgba(255, 255, 255, 0.5);
-    border: 1px solid red;
     margin-left: 100px;
     margin-right: 400px;
 }
 #videos-ingles > h1{
     margin-left: 160px;
-    border: 1px solid red;
 }
 #cursos-ingles > h1 > img,#apps-ingles > h1 >img, #videos-ingles > h1 > img{
-    border: 1px solid red;
     height: 1.3em;
     width: 0.6em;
 }
@@ -41,11 +42,9 @@ body{
     width: 70vw;
 }
 #esquerda1{
-    border: 1px solid red;
     width: 35%;
 }
 #direita1 , #direita2, #direita3, #direita4{
-    border: 1px solid red;
     width: 65%;
     padding: 10px;
 }
@@ -53,22 +52,19 @@ body{
     font-size: 1.4em;
     line-height: 30px;
 }
-.link{
+a.top{
     color: white;
-    font-size: 2em;
-    font-weight: bold;
-    padding: 4px 10px 4px 10px;
-    margin-top: 20px;
-    margin-left: 40px;
-    border: none;
+    font-size: 1.4em;
+    font-family: var(--fonte-especial);
+    font-weight: 500;
+    padding: 6px 10px 8px 10px;
     border-radius: 40px;
     background-color: #bb4907;
     transition: 0.5s;
-    border: 1px solid red;
 }
-.link:hover{
-    padding: 5px 16px 5px 16px;
-    font-size: 2.1em;
+a.top:hover{
+    padding: 8px 16px 10px 16px;
+    font-size: 1.5em;
     background-color: #FF5C00;
 }
 span{
@@ -77,18 +73,15 @@ span{
 
 #esquerda3, #esquerda4{
     width: 35%;
-    border: 1px solid red;
 }
 
 
 #videos-ingles{
-    background-image: url(imagens/7.png);
+    background-image: url(../logos-img/7.png);
     background-repeat: no-repeat;
     background-position: center center;
-    border: 1px solid red;
 }
 article{
-    border: 1px solid red;
     border: 6px solid white;
     border-radius: 40px;
     padding: 20px;
@@ -96,27 +89,29 @@ article{
 }
 .box-videos{
     padding-bottom: 20px;
-    border: 1px solid red;
 }
 .logo{
     border-bottom: 1px solid #f8620c;
-    border: 1px solid red;
 }
 .txt{
-    border: 1px solid red;
     padding: 10px;
     font-size: 1.2em;
     line-height: 30px;
 }
-.videos{  
+a.videos{  
     font-size: 1.3em;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: var(--fonte-especial);
+    font-weight: 600;
     padding: 5px 16px 5px 16px;
-    border: 1px solid red;
+    margin: 0;
+    border: none;
     border-radius: 40px;
+    background-color: white;
+    color: black;
     transition: 0.5s;
 }
-.videos:hover{
+a.videos:hover{
     background-color: #f8620c;
     color: white;
 }
@@ -154,9 +149,6 @@ article{
     #direita1,#direita2,#direita3,#direita4{
         width: 94%;
     }
-    .link{
-        margin-left: 60px;
-    }
 }
 @media only screen and (max-width:430px){
     #cursos-ingles > h1,#apps-ingles > h1, #videos-ingles > h1{
@@ -168,7 +160,10 @@ article{
     #esquerda2>img{
         width: 100%;
     }
-    .link{
+    a.top{
+        margin-left: 50px;
+    }
+    a.videos{
         margin-left: 30px;
     }
     article{
@@ -176,5 +171,4 @@ article{
         padding: 10px;
         
     }
-
 }
