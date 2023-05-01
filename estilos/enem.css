@@ -6,14 +6,21 @@
     --fonte-txt:'Roboto', sans-serif;
     --fonte-especial: 'Pridi', serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+div#la{
+    padding-top: 6px;
+}
+a#l{
+    background-color: black;
+}
 body{
     color: white;
     background-color: black;
     margin: 0;
     font-family: var(--fonte-txt);
 }
-
 .cursos-enem{
     background-image: url(../logos-img/6.png);
     background-repeat: no-repeat;
@@ -34,11 +41,11 @@ body{
     margin-left: 160px;
 }
 .cursos-enem > h1 > img, #videos-enem > h1 > img{
-    height: 1.3em;
+    height: 1.2em;
     width: 0.6em;
 }
 .box{
-    border: 8px solid white;
+    border: 4px solid white;
     border-radius: 40px;
     padding: 8px;
     display: flex;
@@ -53,7 +60,7 @@ body{
     width: 65%;
     padding: 10px;
 }
-#direita1 > p, #direita2 > p, #direita3 > p, #direita4 > p{
+#direita1 > p, #direita2 > p, #direita3 > p, #direita4 > p,#direita5 > p{
     font-size: 1.4em;
     line-height: 30px;
 }
@@ -80,8 +87,11 @@ span{
     background-repeat: no-repeat;
     background-position: center center;
 }
+img.vid{
+    border-radius: 20px 20px 0px 0px;
+}
 article{
-    border: 6px solid white;
+    border: 4px solid white;
     border-radius: 40px;
     padding: 20px;
     margin: 80px 299px 80px 160px;
@@ -155,6 +165,7 @@ a.videos:hover{
     }
     #direita1,#direita2,#direita3,#direita4,#direita5{
         width: 94%;
+        text-align: center;
     }
     .link{
         margin-left: 60px;
@@ -178,11 +189,8 @@ a.videos:hover{
         padding: 10px;
         
     }
-    a.top{
-        margin-left: 50px;
-    }
     a.videos{
-        margin-left: 30px;
+        margin-left: 40px;
     }
     article{
         margin: 80px 14px 80px 14px;

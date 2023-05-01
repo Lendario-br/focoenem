@@ -6,10 +6,19 @@
     --fonte-txt:'Roboto', sans-serif;
     --fonte-especial: 'Pridi', serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+div#la{
+    padding-top: 6px;
+}
+a#l{
+    background-color: black;
+}
 body{
     color: white;
     background-color: black;
+    font-family: var(--fonte-txt);
     margin: 0;
 }
 #apps-ingles, #cursos-ingles{
@@ -33,7 +42,7 @@ body{
     width: 0.6em;
 }
 .box{
-    border: 8px solid white;
+    border: 4px solid white;
     border-radius: 40px;
     padding: 8px;
     display: flex;
@@ -74,15 +83,16 @@ span{
 #esquerda3, #esquerda4{
     width: 35%;
 }
-
-
 #videos-ingles{
     background-image: url(../logos-img/7.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
+img.vid{
+    border-radius: 20px 20px 0px 0px;
+}
 article{
-    border: 6px solid white;
+    border: 4px solid white;
     border-radius: 40px;
     padding: 20px;
     margin: 80px 299px 80px 160px;
@@ -131,6 +141,15 @@ a.videos:hover{
         width: 100%;
     }
 }
+@media only screen and (max-width:730px){
+    #OE{
+        flex-direction: column;
+    }
+    #esquerda2,#direita2{
+        width: 100%;
+        text-align: center;
+    }
+}
 @media only screen and (max-width:600px){
     #cursos-ingles > h1,#apps-ingles > h1, #videos-ingles > h1{
         font-size: 4.5em;
@@ -148,6 +167,7 @@ a.videos:hover{
     }
     #direita1,#direita2,#direita3,#direita4{
         width: 94%;
+        text-align: center;
     }
 }
 @media only screen and (max-width:430px){
@@ -159,9 +179,6 @@ a.videos:hover{
     }
     #esquerda2>img{
         width: 100%;
-    }
-    a.top{
-        margin-left: 50px;
     }
     a.videos{
         margin-left: 30px;

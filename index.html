@@ -21,9 +21,9 @@
         </nav>
     </header>
     <main>
-            <div class="tittle">Prepare-se para o Enem através de cursos</div>
+            <div class="tittle">Prepare-se para o Enem através de cursos:</div>
                 <br>
-                <div class="tittle2"><div class="Text">únicos</div>,<div class="Text">eficientes</div> & <div class="Text">completos</div></div>
+                <div class="tittle2"><div class="Text">únicos</div><div class="Text">eficientes</div><div class="Text">completos</div></div>
                 <div class="scrolldown"><img src="logos-img/scrolldown.png" alt=""></div>
             </div>
         </div>
@@ -32,12 +32,12 @@
             <div class="enem">
                 <div class="logoenem"><img src="logos-img/logoenem.png" alt="" sizes="1" srcset=""></div>
             </div>
-            <h4>.cursos que te preparam e entregam conteudos para o enem:</h4>
+            <h4>Que tal uma ajudinha para estudar para o ENEM e tirar nota 100?</h4>
             <aside class="aside">
-                <h3 onclick="enem()">gratuitos</h3>
-                kultivi, blogdoenem & cursoenemgratuito
-                <h3 onclick="enem()">pagos</h3>
-                descomplica & aprova total
+                <p>Sites que te ajudaram na sua caminhada para realizar a prova do ENEM. </p>
+                <h3 onclick="sEnem()">VER SITES</h3>
+                <p>Aulas gratuitas no YouTube de todas as matérias exigidas no ENEM.</p>
+                <h3 onclick="vEnem()">VER PLAYLISTS</h3>
             </aside>  
         </article>
         <hr>
@@ -45,12 +45,14 @@
             <div class="ingles">
             <div class="logoingles"><img src="logos-img/logoingles.png" alt="" sizes="1" srcset="" title="oioioi"></div>
             </div>
-            <h4>.cursos e apps que te preparam, entregando conteúdos da lingua inglesa:</h4>.
+            <h4>Cursos e APPS de Inglês para alavancar seus conhecimentos na área.</h4>.
             <aside class="aside">
-                <h3 onclick="ingles()">gratuitos</h3>
-                wizard, open english & aba
-                <h3 onclick="ingles()">pagos</h3>
-                duolingo, babbel, busu & memrise
+                <p>Conheça nossas recomendações de sites para seu aprendizado.</p>
+                <h3 onclick="ingles()">VER SITES</h3>
+                <p>APPS recomendados para iniciantes com o intuito de melhorar seus estudos.</p>
+                <h3 onclick="aIngles()">VER APPS</h3>
+                <p>Vídeo aulas grátis que vão desde o nível iniciante até o avançado.</p>
+                <h3 onclick="vIngles()">VER PLAYLISTS</h3>
             </aside>
 
         </article>
@@ -66,6 +68,7 @@
             <h2><span class="rodape">Contatos</span></h2>
             <p><i class="fa fa-whatsapp" style="font-size:26px"></i> +55(32) 9986-09167</p>
             <p onclick="emai()"><i class="fa fa-envelope" style="font-size:26px"></i> focoenemduvidas@gmail.com</p>
+            <h5 id="footer">Criado por: <a href="https://lendario-br.github.io/portifolio/" class="creditos">Gabriel</a>, <a href="https://www.instagram.com/otavioofelicio/" class="creditos">Otávio</a> e <a href="https://www.instagram.com/miguelbento_caradipau/" class="creditos">Miguel</a>.</h5>
         </div>
         <div id="ladoC">
             <img src="logos-img/logo-projeto.png" alt="logo do Projeto FocoEnem">
@@ -76,11 +79,20 @@
         function emai(){
             window.location.href ='mailto:focoenemduvidas@gmail.com'
         }
-        function enem(){
+        function sEnem(){
             window.location.href ='enem.html'
+        }
+        function vEnem(){
+            window.location.href = 'enem.html#VideosEnem'
         }
         function ingles(){
             window.location.href ='ingles.html'
+        }
+        function aIngles(){
+            window.location.href = 'ingles.html#appsIngles'
+        }
+        function vIngles(){
+            window.location.href = 'ingles.html#videosIngles'
         }
     </script>
 </body>

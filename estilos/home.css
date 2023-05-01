@@ -30,12 +30,11 @@ body {
     width: fit-content;
 }
 .tittle {
-    font-size: 20px;
+    font-size: 1.2em;
     letter-spacing: 2px;
     color: white;
     margin-top: 5vh;
     margin-left: 10vw;
-    display: flex;
 }
 .tittle2 {
     color: white;
@@ -45,13 +44,11 @@ body {
     
 }
 .Text {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 10px;
     padding: 1px 15px;
     font-size: 30px;
-    border-radius: 20px;
-    background: rgb(82,35,0);
-    background: linear-gradient(90deg, rgba(82,35,0,0.59) 1%, rgba(89,43,9,0.59) 8%, rgba(255,109,0,0.59) 28%, rgba(255,110,0,0.59) 61%, rgba(85,36,0,0.59) 76%);
+    border-radius: 10px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), rgb(255, 102, 0, 0.7), rgba(0, 0, 0, 0));
 }
 
 .scrolldown {
@@ -67,7 +64,6 @@ body {
 article {
     background-image: url(../logos-img/fundo2.png);
     background-size: cover;
-    padding: 100px;
     color: white;
 }
 article > hr {
@@ -83,8 +79,10 @@ article > hr {
     margin-top: 10vh;
 }
 h4 {
-    margin-top: -20px;
-    margin-left: 10vw;
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
 }
 h3 {
     margin-left: auto;
@@ -94,15 +92,26 @@ h3 {
     background: rgb(82,35,0);
     background: linear-gradient(90deg, rgba(82,35,0,0.7805497198879552) 0%, rgba(255,92,0,0.78) 54%, rgba(82,35,0,0.8029586834733894) 100%, rgba(255,92,0,1) 100%);
     border-radius: 20px;
-
+    font-family: var(--fonte-especial);
+    font-weight: 600;
+}
+h5{
+    font-size: 1.2em;
 }
 .aside {
     margin-left: 10vw;
+    margin-bottom: 16px;
     border: 2px solid white;
     border-radius: 30px;
     width: 625px;
     text-align: center;
     padding: 0px 0px 15px 0px;
+}
+.aside > p{
+    font-size: 1.1em;
+    line-height: 30px;
+    padding: 20px;
+    margin: 0;
 }
 @media only screen and (max-width:900px) {
     .logo {
@@ -111,16 +120,6 @@ h3 {
         margin-left: auto;
         margin-right: auto;
         width: fit-content;
-    }
-    .tittle {
-        width: fit-content;
-        font-size: 1.5em;
-        letter-spacing: 2px;
-        color: white;
-        margin-top: 5vh;
-        text-align: center;
-        display: flex;
-
     }
     .scrolldown {
         width: fit-content;
@@ -132,7 +131,6 @@ h3 {
     }
     .tittle2 {
         flex-direction: column;
-        color: rgba(0, 0, 0, 0);
         font-size: 1em;
         letter-spacing: 2px;
         margin-top: 5vh;
@@ -144,14 +142,12 @@ h3 {
     }
     .Text {
         font-size: 1.5em;
-        color: white;
         text-align: center;
     }
     .aside {
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
-        border: 2px solid white;
         border-radius: 30px;
         width: 300px;
         font-size: 20px;
@@ -190,15 +186,6 @@ h3 {
         margin-right: auto;
         width: fit-content;
     }
-    .tittle {
-        font-size: 0.8em;
-        letter-spacing: 2px;
-        color: white;
-        margin-top: 5vh;
-        margin-left: 10vw;
-        display: flex;
-
-    }
     .scrolldown {
         width: fit-content;
         height: fit-content;
@@ -210,7 +197,6 @@ h3 {
     }
     .tittle2 {
         flex-direction: column;
-        color: rgba(0, 0, 0, 0);
         font-size: 1em;
         letter-spacing: 2px;
         margin-top: 5vh;
@@ -220,16 +206,10 @@ h3 {
 
 
     }
-    .Text {
-        font-size: 1.5em;
-        color: white;
-        text-align: center;
-    }
     .aside {
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
-        border: 2px solid white;
         border-radius: 30px;
         width: 300px;
         font-size: 20px;
@@ -272,15 +252,6 @@ h3 {
         margin-right: auto;
         width: fit-content;
     }
-    .tittle {
-        font-size: 0.8em;
-        letter-spacing: 2px;
-        color: white;
-        margin-top: 5vh;
-        margin-left: 10vw;
-        display: flex;
-
-    }
     .scrolldown {
         width: fit-content;
         height: fit-content;
@@ -292,7 +263,6 @@ h3 {
     }
     .tittle2 {
         flex-direction: column;
-        color: rgba(0, 0, 0, 0);
         font-size: 1em;
         letter-spacing: 2px;
         margin-top: 5vh;
@@ -302,16 +272,10 @@ h3 {
 
 
     }
-    .Text {
-        font-size: 1.5em;
-        color: white;
-        text-align: center;
-    }
     .aside {
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
-        border: 2px solid white;
         border-radius: 30px;
         width: 300px;
         font-size: 15px;
@@ -346,15 +310,6 @@ h3 {
             margin-top: -120px;
             width: fit-content;
         }
-        .tittle {
-            font-size: 0.8em;
-            letter-spacing: 2px;
-            color: white;
-            margin-top: 5vh;
-            margin-left: 10vw;
-            display: flex;
-    
-        }
         .scrolldown {
             width: fit-content;
             height: fit-content;
@@ -366,7 +321,6 @@ h3 {
         }
         .tittle2 {
             flex-direction: column;
-            color: rgba(0, 0, 0, 0);
             font-size: 1em;
             letter-spacing: 2px;
             margin-top: 5vh;
@@ -376,16 +330,10 @@ h3 {
     
     
         }
-        .Text {
-            font-size: 1.5em;
-            color: white;
-            text-align: center;
-        }
         .aside {
             margin-left: auto;
             margin-right: auto;
             flex-direction: column;
-            border: 2px solid white;
             border-radius: 30px;
             width: 300px;
             font-size: 15px;
