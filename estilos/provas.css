@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --cor:#FF5C00;
+    --fonte-txt:'Roboto', sans-serif;
+    --fonte-especial: 'Pridi', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: white;
+    margin: 0;
+    font-family: var(--fonte-txt);
+}
+
+a.p {
+    margin-top: 0px;
+    margin: 0px;
+    color: white;
+    padding: 0px;
+    border-radius: 0px;
+    background-color: black;
+    text-decoration: none;
+}
+h1{
+    padding-left: 40px;
+}
+h1 > img{
+    height: 120px;
+}
+section{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+aside{
+    border: 3px solid white;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+}
+aside > h2{
+    margin: 0px;
+    font-size: 2em;
+    padding: 20px 0px 20px 0px;
+    text-indent: 20px;
+    border-radius: 20px 20px 0px 0px;
+    background-image: linear-gradient(to left, #a33f05,#b85015);
+}
+#provas{
+    width: 95%;
+    margin: auto;
+}
+#provas > h3{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+span.ano{
+    background-color: #ff5e009f;
+    padding: 0px 2px 0px 2px;
+}
+#provas > ul{
+    column-count: 2;
+}
+#provas > ul > li > a{
+    font-size: 1.2em;
+    padding: 0px 6px 0px 6px;
+    text-decoration: underline;
+}
+#provas > ul > li > a:hover{
+    color: var(--cor);
+}
+@media only screen and (max-width:750px){
+    h1>img{
+        height: 100px;
+    }
+}
+@media only screen and (max-width:500px){
+    h1>img{
+        height: 80px;
+    }
+}
+@media only screen and (max-width:450px){
+    h1>img{
+        height: 60px;
+    }
+    #provas > ul{
+        columns: 1;
+    }
+    #provas > ul > li{
+        padding-top: 6px;
+    }
+}

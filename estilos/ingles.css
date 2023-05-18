@@ -17,7 +17,6 @@ a#l{
 }
 body{
     color: white;
-    background-color: black;
     font-family: var(--fonte-txt);
     margin: 0;
 }
@@ -102,6 +101,9 @@ article{
 }
 .logo{
     border-bottom: 1px solid #f8620c;
+}
+.logo > picture > img{
+    width: 100%;
 }
 .txt{
     padding: 10px;
